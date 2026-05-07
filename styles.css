@@ -2,45 +2,136 @@
     --bg: #0f172a;
     --main: #1e293b;
     --primary: #3b82f6;
+    --primary-cyan: #06b6d4;
     --text: rgb(7, 20, 131);
 }
 
-body {
+body{
     margin: 0;
     padding: 40px;
     background: linear-gradient(130deg, #0f172a, #1e293b, #3b82f6);
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: var(--text);
-    background-color: var(--bg); 
+    background-color: var(--bg);
     display: flex;
     justify-content: center;
 }
 
-.main {
-    background: var(--main);
+.main{
+    display: flex;
     flex-direction: column;
-    align-items: center;
+    text-align: center;
+    background: var(--main);
     border-radius: 20px;
     padding: 80px;
+    width: 300px;
     max-width: 900px;
     box-shadow: 0 0 25px rgba(25, 0, 46, 1);
     border: 2px solid var(--primary-cyan);
     animation: pulseGlow 1s infinite alternate;
     transition: all 0.4s ease;
     background-color: var(--primary);
-    width: 300px;
 }
 
-.main:hover {
+.main:hover{
     transform: scale(1.01);
 }
 
+.main-title{
+    font-family: "Bungee", sans-serif;
+    animation: glow 1s infinite alternate;
+}
 
-.imagen {
+@keyframes glow{
+
+    from{
+        text-shadow: 0 0 10px #fff;
+    }
+
+    to{
+        text-shadow:
+        0 0 20px #3b82f6,
+        0 0 40px #3b82f6;
+    }
+
+}
+
+.imagen{
     display: flex;
     justify-content: center;
 }
 
-h2 {
+.cover-image{
+    width: 230px;
+    border-radius: 20px;
+    border: 3px solid white;
+    transition: 0.4s;
+}
+
+.cover-image:hover{
+    transform: scale(1.05);
+}
+
+.section{
+    background: rgba(255,255,255,0.1);
+    padding: 15px;
+    border-radius: 15px;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+
+.section:hover{
+    transform: translateY(-3px);
+}
+
+h2{
     color: azure;
+    border-bottom: 2px solid rgba(255,255,255,0.3);
+    padding-bottom: 5px;
+}
+
+.badge{
+    background: #0f172a;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 30px;
+    display: inline-block;
+    margin: 5px;
+    transition: 0.3s;
+}
+
+.badge:hover{
+    background: #06b6d4;
+    transform: scale(1.05);
+}
+
+.lista{
+    color: white;
+    padding-left: 20px;
+}
+
+.lista li{
+    margin: 10px 0;
+    transition: 0.3s;
+}
+
+.lista li:hover{
+    transform: translateX(5px);
+    color: #06b6d4;
+}
+
+button{
+    background: #0f172a;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 20px;
+}
+
+button:hover{
+    background: #06b6d4;
+    transform: scale(1.05);
 }
