@@ -1,0 +1,6 @@
+[
+  { "id": 101, "nombre": "María Alejandra Gómez", "edad": 19, "carrera": "Ingeniería de Sistemas", "promedio": 4.7, "ciudad": "Bucaramanga", "foto": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400" },
+  { "id": 102, "nombre": "Juan David Rodríguez", "edad": 21, "carrera": "Medicina", "promedio": 4.2, "ciudad": "Piedecuesta", "foto": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400" },
+  { "id": 103, "nombre": "Valentina Torres", "edad": 20, "carrera": "Psicología", "promedio": 4.9, "ciudad": "Floridablanca", "foto": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400" },
+  { "id": 104, "nombre": "Carlos Andrés Ramírez", "edad": 22, "carrera": "Administración de Empresas", "promedio": 3.8, "ciudad": "Girón", "foto": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400" }
+]

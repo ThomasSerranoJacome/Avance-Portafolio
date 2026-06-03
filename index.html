@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="estudiantes.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin">
     <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
@@ -63,6 +64,29 @@
         </section>
 
         <button>Contactame</button>
+
+        <section class="section">
+            <h2>Listado de Estudiantes</h2>
+
+            <div class="controles">
+                <button id="btnCargar">Cargar estudiantes</button>
+                <span id="estado"></span>
+            </div>
+
+            <div id="contenedorEstudiantes"></div>
+            <div id="error" class="oculto"></div>
+
+            <h2>Prácticas DOM</h2>
+            <div class="panel-practicas">
+                <button id="demo-getId">1. getElementById</button>
+                <button id="demo-queryAll">2. querySelectorAll</button>
+                <button id="demo-classList">3. classList.toggle</button>
+                <button id="demo-atributos">4. toggleAttribute</button>
+                <button id="demo-contenido">5. textContent vs innerHTML</button>
+            </div>
+
+            <div id="log">Aquí verás qué método se ejecutó...</div>
+        </section>
 
     </main>
 
