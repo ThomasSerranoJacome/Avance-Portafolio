@@ -51,9 +51,10 @@ function mostrarLog(mensaje) {
     log.textContent = `${mensaje} | ${new Date().toLocaleTimeString()}`;
 }
 
-document.getElementById('demo-getId').addEventListener('click', () => {
-    document.getElementById('titulo').style.color = '#9a17ce';
-    mostrarLog('getElementById() → cambió el color del título');
+document.getElementById('demo-getId').addEventListener('click',()=>{
+    const Listado = document.getElementById('Listado');
+    Listado.style.color = '#9a17ce';
+    mostrarLog('Uso de getElementById() para seleccionar y cambiar color de titulo');
 });
 
 document.getElementById('demo-queryAll').addEventListener('click', () => {
@@ -72,14 +73,12 @@ document.getElementById('demo-atributos').addEventListener('click', () => {
     mostrarLog('toggleAttribute() → alternó el botón');
 });
 
-document.getElementById('demo-contenido').addEventListener('click', () => {
-    const subtitulo = document.getElementById('subtitulo');
-    if (subtitulo.textContent === 'Manipulación del DOM') {
-        subtitulo.innerHTML = 'Ejemplo de <strong style="color:#06b6d4">Manipulación del DOM</strong>';
-    } else {
+document.getElementById('demo-contenido').addEventListener('click',()=>{
+    if(subtitulo.textContent.includes('textContent')){
         subtitulo.textContent = 'Manipulación del DOM';
+    }else{
+        subtitulo.innerHTML = 'Ejemplo de <strong>Manipulación del DOM</strong>';
     }
-    mostrarLog('textContent vs innerHTML → cambió el subtítulo');
 });
 
 window.addEventListener('DOMContentLoaded', cargarEstudiantes);
